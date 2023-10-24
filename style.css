@@ -15,13 +15,19 @@ body{
     background-size: cover;
     filter:brightness(70%);   
 }
-
+.our_category{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    font-family: serif;
+}
 .text_container{
     background-color:inherit;
     position: relative;
     top: 50%;
     left: 10%;
     width: 50%;
+    font-family: serif;
 }
 #About_button{
     width: 40%;
@@ -35,6 +41,7 @@ body{
     flex-direction: column;
     justify-content: center;
     padding: 50px;
+    font-family: serif;
 }
 .about_icons_container{
     display: flex;
@@ -55,46 +62,53 @@ body{
 .about_icons p{
     margin-top: 20px;
 }
-.category{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 40px;
-    justify-content: center;
-}
-.list_style{
-    list-style: none;
-    display: flex;
-}
-.list_style li{
+.category_container{
     width: 100%;
     height: 50vh;
-    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
 }
-.list_style li:hover{
-    transition-duration: 1s;
-    transition-timing-function: ease-in-out;
-    transition-property: all;
+.cards img{
+    width: 100%;
+    height: 70%;
 }
-.list_style li a{
-    text-decoration: none;
-}
-.list_style li p{
-    background-color: black;
+.cards button{
+    width: 100%;
     color: white;
+    background-color: orange;
     position: relative;
-    margin-top: -25px;
-    filter: opacity(70%);
-    border-end-end-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border: none;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.cards p{
+    background-color: black;
+    width: 100%;
+    position: relative;
+    color: white;
     text-align: center;
+    margin-top: -50px;
+    filter: opacity(50%);
+    padding: 5px;
 }
-.list_style li img{
-    border-radius: 20px;
-    filter: brightness(90%);
+.cards{
+    width: 50%;
+    height: auto;
+    margin: 30px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
 }
+.category{
+    height: inherit;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    justify-content: center;
+}
+
+
 .text{
     text-align: center;
     width: 100%;
@@ -103,7 +117,43 @@ body{
     filter: opacity(40%);
     border-end-end-radius: 5px;
 }
-
+.design_conatainer{
+    width: 100%;
+    height: auto;
+    background-color: rgb(236, 236, 236);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.design_text{
+    width: 50%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    margin: 70px;
+    font-family: serif;
+}
+.design_text button{
+    border: none;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+.design_text button:hover{
+    background-color: gray;
+    color: black;
+}
+.design_photo{
+    width: 50%;
+    height: 60vh;
+    margin: 70px;
+}
+.design_photo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
 footer{
     width: 100%;
     height: auto;
@@ -111,6 +161,7 @@ footer{
     justify-content: center;
     background-color: rgb(4, 4, 31);
     color: white;
+    margin-top: 30px;
 }
 .footer_content button{
     padding: 10px;
@@ -144,16 +195,55 @@ a{
     .about_icons{
         width: 100%;
     }
-    .list_style{
+    .category_container{
+        width: 100%;
+        height: auto;
         display: flex;
         flex-direction: column;
-  
-}
-.list_style li{
-    width: 100%;
-    height: 30vh;
-    margin: 10px;
-}
+        margin-top: 40px;
+    }
+    .category{
+        height: inherit;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 30px;
+        justify-content: center;
+    }
+    #bg_container{
+        width: 100%;
+        height: 50vh;
+        background-image: url(africa.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter:brightness(70%);
+    }
+    .text_container{
+        background-color:inherit;
+        position: relative;
+        top: 30%;
+        left: 10%;
+        width: 50%;
+    }
+    .design_conatainer{
+        width: 100%;
+        height: auto;
+        background-color: rgb(236, 236, 236);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .design_text{
+        margin: 10px;
+        height: auto;
+        margin-top: 50px;
+    }
+    .design_photo{
+        margin: 10px;
+        margin-bottom: 50px;
+    }
+    
 }
 
 
